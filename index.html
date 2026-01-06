@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enterprise Control Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Enterprise Control Center</h1>
+
+<nav>
+  <button onclick="show('overview')">Overview</button>
+  <button onclick="show('security')">Security</button>
+  <button onclick="show('monitoring')">Monitoring</button>
+  <button onclick="show('analytics')">Analytics</button>
+</nav>
+
+<section id="overview" class="page">
+  <h2>System Overview</h2>
+  <p>Status: All systems operational</p>
+</section>
+
+<section id="security" class="page" style="display:none;">
+  <h2>Security</h2>
+  <p>No active threats detected</p>
+</section>
+
+<section id="monitoring" class="page" style="display:none;">
+  <h2>Monitoring</h2>
+  <p>CPU: 62% | Memory: 70% | Errors: 0</p>
+</section>
+
+<section id="analytics" class="page" style="display:none;">
+  <h2>Analytics</h2>
+  <p>Active Users: 1,240</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
